@@ -69,3 +69,12 @@ E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\obj\Debug\
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\obj\Debug\OnlineExamManagementSystem.csproj.CopyComplete
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\obj\Debug\OnlineExamManagementSystem.dll
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\obj\Debug\OnlineExamManagementSystem.pdb
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\EntityFramework.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\OnlineExamManagement.DatabaseContext.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\OnlineExamManagementSystem.Models.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\OnlineExamManagement.DatabaseContext.pdb
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\OnlineExamManagement.DatabaseContext.dll.config
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\OnlineExamManagementSystem.Models.pdb
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\EntityFramework.xml
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem\bin\EntityFramework.SqlServer.xml
