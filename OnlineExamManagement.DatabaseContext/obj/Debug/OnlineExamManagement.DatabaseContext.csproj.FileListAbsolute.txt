@@ -1,0 +1,16 @@
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.dll.config
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.pdb
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagementSystem.Models.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagementSystem.Models.pdb
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.xml
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csprojAssemblyReference.cache
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csproj.CoreCompileInputs.cache
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csproj.CopyComplete
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.dll
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.pdb
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.Course_Trainer_first_entry.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csproj.GenerateResource.cache
