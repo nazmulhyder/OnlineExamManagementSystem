@@ -45,3 +45,7 @@ D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseConte
 D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.dll
 D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.pdb
 >>>>>>> 2bb0e27e035767c49c61b5edff840f350b6af233
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.databaseTable_bug_fixes.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_bug_fix.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_bug_fixes.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_bug_fixes_2.resources

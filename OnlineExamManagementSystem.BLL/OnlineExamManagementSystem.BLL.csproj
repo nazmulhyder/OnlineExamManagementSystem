@@ -42,5 +42,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineExamManagementSystem.Models\OnlineExamManagementSystem.Models.csproj">
+      <Project>{dff390d1-210e-4ba3-ac8f-6e19e2ba7d5a}</Project>
+      <Name>OnlineExamManagementSystem.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnlineExamManagementSystem.Repository\OnlineExamManagementSystem.Repository.csproj">
+      <Project>{51d8a583-4c99-4ed7-9c09-d814e2c516e0}</Project>
+      <Name>OnlineExamManagementSystem.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

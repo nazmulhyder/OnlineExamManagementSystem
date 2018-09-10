@@ -12,9 +12,7 @@ namespace OnlineExamManagementSystem.Models
     public class Course
     {
         public int Id { get; set; }
-        [Required]
-        public Organization Organization { get; set; }
-
+        
         [Required]
         public int Batch { get; set; }
 
@@ -32,15 +30,14 @@ namespace OnlineExamManagementSystem.Models
         [Required]
         [StringLength(500)]
         public string Outline { get; set; }
-        public Tags Tags { get; set; }
 
-        public CourseTrainer CourseTrainerId { get; set; }
+        public int CourseTrainerId { get; set; }
         public CourseTrainer CourseTrainer { get; set; }
-        public CourseOrganization CourseOrganizationId { get; set; }
+        public int CourseOrganizationId { get; set; }
         public CourseOrganization CourseOrganization { get; set; }
         public List<Exam> ListOfExams { get; set; }
 
-        public CourseTags CourseTagsId { get; set; }
+        public int CourseTagsId { get; set; }
 
         public CourseTags CourseTags { get; set; }
         public List<Batch> ListOfBatches { get; set; }

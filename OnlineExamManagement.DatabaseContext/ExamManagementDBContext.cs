@@ -15,6 +15,14 @@ namespace OnlineExamManagement.DatabaseContext
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<CourseTrainer> CourseTrainers { get; set; }
         public DbSet<CourseOrganization> CourseOrganizations { get; set; }
+        public DbSet<CourseTags> CourseTagses { get; set; }
+        public DbSet<Exam> Exams { get; set; }
+        public DbSet<ExamSchedule> ExamSchedules { get; set; }
+        public DbSet<Participant> Participants { get; set; }
+        public  DbSet<Tags> Tagses { get; set; }
+        public DbSet<Batch> Batches { get; set; }
+
+
 
     }
 }

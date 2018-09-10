@@ -20,7 +20,7 @@ namespace OnlineExamManagementSystem.Models
         [Display(Name = "End Date")]
         [DataType(DataType.Date)]
         public DateTime? EndDate { get; set; }
-        public Course CourseId { get; set; }
+        public int CourseId { get; set; }
         public Course Course { get; set; }
         public List<Participant> ListOfParticipants { get; set; }
 

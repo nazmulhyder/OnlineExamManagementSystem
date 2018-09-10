@@ -19,7 +19,7 @@ namespace OnlineExamManagementSystem.Models
         public int FullMarks { get; set; }
         [Required]
         public TimeSpan Duration { get; set; }
-        public Course CourseId { get; set; }
+        public int CourseId { get; set; }
         public Course Course { get; set; }
         public List<ExamSchedule> ExamSchedules { get; set; }
 

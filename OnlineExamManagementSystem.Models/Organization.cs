@@ -21,7 +21,7 @@ namespace OnlineExamManagementSystem.Models
         public string ContactNumber { get; set; }
         public string About { get; set; }
         public string Logo { get; set; }
-        public CourseOrganization CourseOrganizationId { get; set; }
+        public int CourseOrganizationId { get; set; }
         public CourseOrganization CourseOrganization { get; set; }
 
     }

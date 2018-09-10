@@ -28,7 +28,7 @@ namespace OnlineExamManagementSystem.Models
         public int PostalCode { get; set; }
         public string Country { get; set; }
 
-        public CourseTrainer CourseTrainerId { get; set; }
+        public int CourseTrainerId { get; set; }
         public CourseTrainer CourseTrainer { get; set; }
 
 
