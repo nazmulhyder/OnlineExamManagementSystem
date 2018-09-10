@@ -17,4 +17,13 @@ E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.csproj.CopyComplete
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.dll
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.pdb
+<<<<<<< HEAD
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.csprojAssemblyReference.cache
+=======
+D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\bin\Debug\OnlineExamManagementSystem.Models.dll
+D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\bin\Debug\OnlineExamManagementSystem.Models.pdb
+D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.csprojAssemblyReference.cache
+D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.csproj.CoreCompileInputs.cache
+D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.dll
+D:\DOT NET\Project\OnlineExamManagementSystem\OnlineExamManagementSystem.Models\obj\Debug\OnlineExamManagementSystem.Models.pdb
+>>>>>>> 2bb0e27e035767c49c61b5edff840f350b6af233
