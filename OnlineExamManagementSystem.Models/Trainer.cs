@@ -11,7 +11,7 @@ namespace OnlineExamManagementSystem.Models
     {
         public int Id { get; set; }
         [Required]
-        public string Organization { get; set; }
+        public Organization Organization { get; set; }
         [Required]
         public int Batch { get; set; }
         public bool isLead { get; set; }
@@ -28,8 +28,8 @@ namespace OnlineExamManagementSystem.Models
         public int PostalCode { get; set; }
         public string Country { get; set; }
 
-        public int CourseId { get; set; }
-        public Course Course{ get; set; }
+        public CourseTrainer CourseTrainerId { get; set; }
+        public CourseTrainer CourseTrainer { get; set; }
 
 
 

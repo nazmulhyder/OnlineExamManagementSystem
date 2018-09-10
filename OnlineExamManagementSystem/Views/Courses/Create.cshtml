@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>Create</title>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector: 'textarea'});</script>
 </head>
 <body>
 @using (Html.BeginForm())
@@ -103,10 +105,10 @@
 </body>
 </html>
 
-@section Scripts
-{
+
+@*{
 
     <script src="~/Scripts/tinymce/tinymce.js"></script>
     <script src="~/Scripts/main.js"></script>
 
-}
+}*@

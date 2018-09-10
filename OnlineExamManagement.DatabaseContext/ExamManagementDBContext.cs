@@ -12,6 +12,9 @@ namespace OnlineExamManagement.DatabaseContext
     {
         public DbSet<Course> Courses { get; set; }
         public DbSet<Trainer> Trainers { get; set;}
+        public DbSet<Organization> Organizations { get; set; }
+        public DbSet<CourseTrainer> CourseTrainers { get; set; }
+        public DbSet<CourseOrganization> CourseOrganizations { get; set; }
 
     }
 }

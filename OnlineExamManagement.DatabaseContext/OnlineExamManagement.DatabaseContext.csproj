@@ -48,9 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExamManagementDBContext.cs" />
-    <Compile Include="Migrations\201809031924456_Course_Trainer_first_entry.cs" />
-    <Compile Include="Migrations\201809031924456_Course_Trainer_first_entry.Designer.cs">
-      <DependentUpon>201809031924456_Course_Trainer_first_entry.cs</DependentUpon>
+    <Compile Include="Migrations\201809100717193_course_trainer_organization_relation_indatabase_added.cs" />
+    <Compile Include="Migrations\201809100717193_course_trainer_organization_relation_indatabase_added.Designer.cs">
+      <DependentUpon>201809100717193_course_trainer_organization_relation_indatabase_added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809100914248_rest_of_all_tables_added.cs" />
+    <Compile Include="Migrations\201809100914248_rest_of_all_tables_added.Designer.cs">
+      <DependentUpon>201809100914248_rest_of_all_tables_added.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +70,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809031924456_Course_Trainer_first_entry.resx">
-      <DependentUpon>201809031924456_Course_Trainer_first_entry.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809100717193_course_trainer_organization_relation_indatabase_added.resx">
+      <DependentUpon>201809100717193_course_trainer_organization_relation_indatabase_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809100914248_rest_of_all_tables_added.resx">
+      <DependentUpon>201809100914248_rest_of_all_tables_added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

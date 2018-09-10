@@ -7,13 +7,13 @@ namespace OnlineExamManagement.DatabaseContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Course_Trainer_first_entry : IMigrationMetadata
+    public sealed partial class course_trainer_organization_relation_indatabase_added : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Course_Trainer_first_entry));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(course_trainer_organization_relation_indatabase_added));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809031924456_Course_Trainer_first_entry"; }
+            get { return "201809100717193_course_trainer_organization_relation_indatabase_added"; }
         }
         
         string IMigrationMetadata.Source

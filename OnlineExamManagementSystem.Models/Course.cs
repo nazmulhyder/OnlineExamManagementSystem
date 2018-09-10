@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace OnlineExamManagementSystem.Models
 {
@@ -11,7 +13,7 @@ namespace OnlineExamManagementSystem.Models
     {
         public int Id { get; set; }
         [Required]
-        public string Organization { get; set; }
+        public Organization Organization { get; set; }
 
         [Required]
         public int Batch { get; set; }
@@ -19,18 +21,35 @@ namespace OnlineExamManagementSystem.Models
         [Required]
         [StringLength(50)]
         public string Name { get; set; }
-        [Required]
         public String Code { get; set; }
 
         [Required]
         public string CourseDuration { get; set; }
        
         public int Credit { get; set; }
+
+        [AllowHtml]
         [Required]
         [StringLength(500)]
         public string Outline { get; set; }
-        public string Tags { get; set; }
-        public List<Trainer> Trainers { get; set; }
-       
+        public Tags Tags { get; set; }
+
+        public CourseTrainer CourseTrainerId { get; set; }
+        public CourseTrainer CourseTrainer { get; set; }
+        public CourseOrganization CourseOrganizationId { get; set; }
+        public CourseOrganization CourseOrganization { get; set; }
+        public List<Exam> ListOfExams { get; set; }
+
+        public CourseTags CourseTagsId { get; set; }
+
+        public CourseTags CourseTags { get; set; }
+        public List<Batch> ListOfBatches { get; set; }
+
+        
+
+
+
+
+
     }
 }
