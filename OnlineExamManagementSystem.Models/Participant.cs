@@ -25,6 +25,7 @@ namespace OnlineExamManagementSystem.Models
         [Required]
         public string PostalCode { get; set; }
         public string Country { get; set; }
+        public string Image { get; set; }
         public int BatchId { get; set; }
         public Batch Batch { get; set; }
 

@@ -48,13 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExamManagementDBContext.cs" />
-    <Compile Include="Migrations\201809101649139_database_bug_fixes.cs" />
-    <Compile Include="Migrations\201809101649139_database_bug_fixes.Designer.cs">
-      <DependentUpon>201809101649139_database_bug_fixes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809101653111_database_bug_fixes_2.cs" />
-    <Compile Include="Migrations\201809101653111_database_bug_fixes_2.Designer.cs">
-      <DependentUpon>201809101653111_database_bug_fixes_2.cs</DependentUpon>
+    <Compile Include="Migrations\201809121556543_database_update_with_fluentAPI.cs" />
+    <Compile Include="Migrations\201809121556543_database_update_with_fluentAPI.Designer.cs">
+      <DependentUpon>201809121556543_database_update_with_fluentAPI.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,11 +66,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809101649139_database_bug_fixes.resx">
-      <DependentUpon>201809101649139_database_bug_fixes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809101653111_database_bug_fixes_2.resx">
-      <DependentUpon>201809101653111_database_bug_fixes_2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809121556543_database_update_with_fluentAPI.resx">
+      <DependentUpon>201809121556543_database_update_with_fluentAPI.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

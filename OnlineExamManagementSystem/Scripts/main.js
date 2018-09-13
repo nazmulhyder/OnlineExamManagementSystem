@@ -1,5 +1,5 @@
 ﻿tinyMCE.init({
-
-    mode: "textareas",
-    theme: "advanced"
+    selector: "textarea"
 });
+    
+        

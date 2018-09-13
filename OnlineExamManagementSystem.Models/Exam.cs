@@ -24,5 +24,6 @@ namespace OnlineExamManagementSystem.Models
         public List<ExamSchedule> ExamSchedules { get; set; }
 
 
+
     }
 }

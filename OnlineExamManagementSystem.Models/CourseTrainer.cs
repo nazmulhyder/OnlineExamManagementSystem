@@ -9,7 +9,11 @@ namespace OnlineExamManagementSystem.Models
     public class CourseTrainer
     {
         public int Id { get; set; }
-        public List<Course> ListOfCourses { get; set; }
-        public List<Trainer> ListOfTrainers { get; set; }
+        //public List<Course> ListOfCourses { get; set; }
+        //public List<Trainer> ListOfTrainers { get; set; }
+        public Course Course { get; set; }
+        public int CourseId { get; set; }
+        public Trainer Trainer { get; set; }
+        public int TrainerId { get; set; }
     }
 }
