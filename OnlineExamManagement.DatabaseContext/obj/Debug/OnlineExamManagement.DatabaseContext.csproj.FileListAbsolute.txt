@@ -53,3 +53,30 @@ E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.course_org_update.resources
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.allowHtml_added_to_about_property_in_org.resources
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_update_with_fluentAPI.resources
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.dll.config
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.pdb
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagementSystem.Models.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.Mvc.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.WebPages.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.WebPages.Razor.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.Razor.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagementSystem.Models.pdb
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.xml
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.Mvc.xml
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.WebPages.xml
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.WebPages.Razor.xml
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.Razor.xml
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csprojAssemblyReference.cache
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_update_with_fluentAPI.resources
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csproj.GenerateResource.cache
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csproj.CoreCompileInputs.cache
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.csproj.CopyComplete
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.dll
+D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.pdb
