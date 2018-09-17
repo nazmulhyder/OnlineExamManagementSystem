@@ -24,9 +24,12 @@ namespace OnlineExamManagementSystem.Models
 
         [AllowHtml]
         public string About { get; set; }
-        public string Logo { get; set; }
-        //public int? CourseOrganizationId { get; set; }
-        //public CourseOrganization CourseOrganization { get; set; }
-        public List<CourseOrganization> CourseOrganizations { get; set; }
+        public byte[] Logo { get; set; }
+        public List<Course> ListOfCourses { get; set; }
+
+        
+        
+
+        
     }
 }

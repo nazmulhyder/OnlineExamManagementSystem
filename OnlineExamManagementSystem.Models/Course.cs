@@ -12,39 +12,27 @@ namespace OnlineExamManagementSystem.Models
     public class Course
     {
         public int Id { get; set; }
-        
-        //[Required]
-        //public int Batch { get; set; }
-
         [Required]
         [StringLength(50)]
+        public Organization Organizations { get; set; }
+
+        public int  OrganizationId { get; set; }
+
         public string Name { get; set; }
-        public String Code { get; set; }
+        public string Code { get; set; }
 
         [Required]
         public string CourseDuration { get; set; }
        
         public int Credit { get; set; }
-
         [AllowHtml]
         [Required]
         [StringLength(500)]
         public string Outline { get; set; }
 
-        //public int? CourseTrainerId { get; set; }
-        //public CourseTrainer CourseTrainer { get; set; }
-        //public int? CourseOrganizationId { get; set; }
-        //public CourseOrganization CourseOrganization { get; set; }
-        public List<CourseOrganization> CourseOrganizations { get; set; }
         public List<CourseTrainer> CourseTrainers { get; set; }
         public List<CourseTags> CourseTags { get; set; }
-        public List<Exam> ListOfExams { get; set; }
 
-        //public int? CourseTagsId { get; set; }
-
-        //public CourseTags CourseTags { get; set; }
-
-        public List<Batch> ListOfBatches { get; set; }
         
 
         

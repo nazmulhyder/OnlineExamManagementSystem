@@ -14,7 +14,6 @@ namespace OnlineExamManagement.DatabaseContext
         public DbSet<Trainer> Trainers { get; set;}
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<CourseTrainer> CourseTrainers { get; set; }
-        public DbSet<CourseOrganization> CourseOrganizations { get; set; }
         public DbSet<CourseTags> CourseTagses { get; set; }
         public DbSet<Exam> Exams { get; set; }
         public DbSet<ExamSchedule> ExamSchedules { get; set; }
@@ -44,15 +43,6 @@ namespace OnlineExamManagement.DatabaseContext
                 .HasMany(c => c.CourseTags)
                 .WithRequired(t => t.Tags)
                 .HasForeignKey(t => t.TagId);
-
-            modelBuilder.Entity<Course>()
-                .HasMany(c => c.CourseOrganizations)
-                .WithRequired(t => t.Course)
-                .HasForeignKey(t => t.CourseId);
-            modelBuilder.Entity<Organization>()
-                .HasMany(c => c.CourseOrganizations)
-                .WithRequired(t => t.Organization)
-                .HasForeignKey(t => t.OrganizationId);
 
 
         }

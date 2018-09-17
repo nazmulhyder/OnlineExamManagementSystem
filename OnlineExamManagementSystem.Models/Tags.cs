@@ -13,8 +13,7 @@ namespace OnlineExamManagementSystem.Models
       [Required]
       public string Name { get; set; }
       public List<CourseTags> CourseTags { get; set; }
-        //public int CourseTagId { get; set; }
-        //public CourseTags CourseTags { get; set; }
+        
 
     }
 }

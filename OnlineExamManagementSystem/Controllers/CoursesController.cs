@@ -18,7 +18,8 @@ namespace OnlineExamManagementSystem.Controllers
         // GET: Courses
         public ActionResult Index()
         {
-            return View(db.Courses.ToList());
+            var courses = db.Courses.Include(c => c.Organizations);
+            return View(courses.ToList());
         }
 
         // GET: Courses/Details/5
@@ -39,6 +40,7 @@ namespace OnlineExamManagementSystem.Controllers
         // GET: Courses/Create
         public ActionResult Create()
         {
+            ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name");
             return View();
         }
 
@@ -47,7 +49,7 @@ namespace OnlineExamManagementSystem.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Code,CourseDuration,Credit,Outline")] Course course)
+        public ActionResult Create([Bind(Include = "Id,OrganizationId,Name,Code,CourseDuration,Credit,Outline")] Course course)
         {
             if (ModelState.IsValid)
             {
@@ -56,6 +58,7 @@ namespace OnlineExamManagementSystem.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name", course.OrganizationId);
             return View(course);
         }
 
@@ -71,6 +74,7 @@ namespace OnlineExamManagementSystem.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name", course.OrganizationId);
             return View(course);
         }
 
@@ -79,7 +83,7 @@ namespace OnlineExamManagementSystem.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Code,CourseDuration,Credit,Outline")] Course course)
+        public ActionResult Edit([Bind(Include = "Id,OrganizationId,Name,Code,CourseDuration,Credit,Outline")] Course course)
         {
             if (ModelState.IsValid)
             {
@@ -87,6 +91,7 @@ namespace OnlineExamManagementSystem.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name", course.OrganizationId);
             return View(course);
         }
 

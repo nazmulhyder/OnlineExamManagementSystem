@@ -10,7 +10,6 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
-
     <title>Index</title>
 </head>
 <body>
@@ -19,6 +18,9 @@
     </p>
     <table class="table">
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Organizations.Name)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -39,6 +41,9 @@
     
     @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Organizations.Name)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>

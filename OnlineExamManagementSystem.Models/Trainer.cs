@@ -11,8 +11,6 @@ namespace OnlineExamManagementSystem.Models
     {
         public int Id { get; set; }
         [Required]
-        public Organization Organization { get; set; }
-        [Required]
         public int Batch { get; set; }
         public bool isLead { get; set; }
         [Required]
@@ -27,9 +25,7 @@ namespace OnlineExamManagementSystem.Models
         [Required]
         public int PostalCode { get; set; }
         public string Country { get; set; }
-
-        //public int CourseTrainerId { get; set; }
-        //public CourseTrainer CourseTrainer { get; set; }
+        public byte[] Image { get; set; }
         public List<CourseTrainer> CourseTrainers { get; set; } 
 
 
