@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OnlineExamManagementSystem.Models.Course>
+﻿@model IEnumerable<OnlineExamManagementSystem.Models.Batch>
 
 @{
     Layout = null;
@@ -10,13 +10,6 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 572c366bb3978ce2416c62d6d38352e1fab922e1
->>>>>>> d392c6ba538056e6215fcf88733e5343342c2769
     <title>Index</title>
 </head>
 <body>
@@ -26,22 +19,19 @@
     <table class="table">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Organizations.Name)
+                @Html.DisplayNameFor(model => model.Course.Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.BatchNumber)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Code)
+                @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CourseDuration)
+                @Html.DisplayNameFor(model => model.StartDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Credit)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Outline)
+                @Html.DisplayNameFor(model => model.EndDate)
             </th>
             <th></th>
         </tr>
@@ -49,22 +39,19 @@
     @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Organizations.Name)
+                @Html.DisplayFor(modelItem => item.Course.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.BatchNumber)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Code)
+                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CourseDuration)
+                @Html.DisplayFor(modelItem => item.StartDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Credit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Outline)
+                @Html.DisplayFor(modelItem => item.EndDate)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
