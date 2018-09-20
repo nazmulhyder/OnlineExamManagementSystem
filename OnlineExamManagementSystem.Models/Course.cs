@@ -12,10 +12,9 @@ namespace OnlineExamManagementSystem.Models
     public class Course
     {
         public int Id { get; set; }
-        [Required]
-        [StringLength(50)]
-        public Organization Organizations { get; set; }
-
+      
+        public virtual Organization Organizations { get; set; }
+        [Display(Name = "Organization")]
         public int  OrganizationId { get; set; }
 
         public string Name { get; set; }
@@ -30,8 +29,7 @@ namespace OnlineExamManagementSystem.Models
         [StringLength(500)]
         public string Outline { get; set; }
 
-        public List<CourseTrainer> CourseTrainers { get; set; }
-        public List<CourseTags> CourseTags { get; set; }
+
 
         
 

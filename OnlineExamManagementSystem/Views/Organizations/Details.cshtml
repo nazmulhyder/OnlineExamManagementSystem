@@ -1,4 +1,4 @@
-﻿@model OnlineExamManagementSystem.Models.Course
+﻿@model OnlineExamManagementSystem.Models.Organization
 
 @{
     Layout = null;
@@ -14,17 +14,9 @@
 </head>
 <body>
     <div>
-        <h4>Course</h4>
+        <h4>Organization</h4>
         <hr />
         <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Organizations.Name)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Organizations.Name)
-            </dd>
-    
             <dt>
                 @Html.DisplayNameFor(model => model.Name)
             </dt>
@@ -42,27 +34,35 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.CourseDuration)
+                @Html.DisplayNameFor(model => model.Address)
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.CourseDuration)
+                @Html.DisplayFor(model => model.Address)
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Credit)
+                @Html.DisplayNameFor(model => model.ContactNo)
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.Credit)
+                @Html.DisplayFor(model => model.ContactNo)
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Outline)
+                @Html.DisplayNameFor(model => model.ImgPath)
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.Outline)
+                @Html.DisplayFor(model => model.ImgPath)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.About)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.About)
             </dd>
     
         </dl>

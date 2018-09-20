@@ -53,10 +53,8 @@ E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.course_org_update.resources
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.allowHtml_added_to_about_property_in_org.resources
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_update_with_fluentAPI.resources
-<<<<<<< HEAD
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_table_modified.resources
 E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.database_change_added.resources
-=======
 D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.dll.config
 D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.dll
 D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\bin\Debug\OnlineExamManagement.DatabaseContext.pdb
@@ -85,3 +83,11 @@ D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContex
 D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.dll
 D:\asp.netProject\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.pdb
 >>>>>>> d392c6ba538056e6215fcf88733e5343342c2769
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.nothingtoadd.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.course_organization.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.course.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.change_added.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.newdatabaseadded.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.newdatabseadded.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.addimg.resources
+E:\BITM Project\OnlineExamManagementSystem\OnlineExamManagement.DatabaseContext\obj\Debug\OnlineExamManagement.DatabaseContext.Migrations.imgadd.resources

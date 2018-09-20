@@ -7,13 +7,13 @@ namespace OnlineExamManagement.DatabaseContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class database_change_added : IMigrationMetadata
+    public sealed partial class addimg : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(database_change_added));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addimg));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809171500538_database_change_added"; }
+            get { return "201809191853380_add img"; }
         }
         
         string IMigrationMetadata.Source
