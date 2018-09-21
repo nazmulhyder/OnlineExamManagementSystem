@@ -48,17 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExamManagementDBContext.cs" />
-    <Compile Include="Migrations\201809191537473_new databse added.cs" />
-    <Compile Include="Migrations\201809191537473_new databse added.Designer.cs">
-      <DependentUpon>201809191537473_new databse added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809191853380_add img.cs" />
-    <Compile Include="Migrations\201809191853380_add img.Designer.cs">
-      <DependentUpon>201809191853380_add img.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809191944480_img add.cs" />
-    <Compile Include="Migrations\201809191944480_img add.Designer.cs">
-      <DependentUpon>201809191944480_img add.cs</DependentUpon>
+    <Compile Include="Migrations\201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.cs" />
+    <Compile Include="Migrations\201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.Designer.cs">
+      <DependentUpon>201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,14 +66,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809191537473_new databse added.resx">
-      <DependentUpon>201809191537473_new databse added.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809191853380_add img.resx">
-      <DependentUpon>201809191853380_add img.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809191944480_img add.resx">
-      <DependentUpon>201809191944480_img add.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.resx">
+      <DependentUpon>201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

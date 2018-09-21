@@ -15,7 +15,7 @@ namespace OnlineExamManagementSystem.Models
       
         public virtual Organization Organizations { get; set; }
         [Display(Name = "Organization")]
-        public int  OrganizationId { get; set; }
+        public int OrganizationId { get; set; }
 
         public string Name { get; set; }
         public string Code { get; set; }
@@ -28,6 +28,12 @@ namespace OnlineExamManagementSystem.Models
         [Required]
         [StringLength(500)]
         public string Outline { get; set; }
+
+        public ICollection<CourseTag> CourseTags { get; set; }
+
+        
+
+        
 
 
 

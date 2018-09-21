@@ -36,7 +36,7 @@ namespace OnlineExamManagementSystem.Models
         [AllowHtml]
         public string About { get; set; }
         
-        public List<Course> Courses { get; set; }
+        public ICollection<Course> Courses { get; set; }
 
         
         

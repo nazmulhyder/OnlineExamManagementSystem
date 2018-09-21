@@ -17,10 +17,24 @@ namespace OnlineExamManagementSystem.Controllers
         private ExamManagementDBContext db = new ExamManagementDBContext();
 
         // GET: Organizations
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.Organizations.ToList());
+            var taken = from model in db.Organizations
+                select model;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                taken = taken.Where(s => s.Name.Contains(searchString));
+
+           }
+            // return View(db.Organizations.ToList());
+            return View(taken);
         }
+
+        //public ActionResult Index(string searchString)
+        //{
+            
+        //}
 
         // GET: Organizations/Details/5
         public ActionResult Details(int? id)

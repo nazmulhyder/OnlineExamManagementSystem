@@ -7,13 +7,13 @@ namespace OnlineExamManagement.DatabaseContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addimg : IMigrationMetadata
+    public sealed partial class courseorganizationcourse_tagmanytomanyrelationuseICollectioninsteadofList : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addimg));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(courseorganizationcourse_tagmanytomanyrelationuseICollectioninsteadofList));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809191853380_add img"; }
+            get { return "201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List"; }
         }
         
         string IMigrationMetadata.Source

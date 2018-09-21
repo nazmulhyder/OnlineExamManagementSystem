@@ -65,7 +65,7 @@
   <ItemGroup>
     <Compile Include="Batch.cs" />
     <Compile Include="Course.cs" />
-    <Compile Include="CourseTags.cs" />
+    <Compile Include="CourseTag.cs" />
     <Compile Include="CourseTrainer.cs" />
     <Compile Include="Exam.cs" />
     <Compile Include="ExamSchedule.cs" />
