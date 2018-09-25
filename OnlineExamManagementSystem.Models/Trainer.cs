@@ -25,8 +25,10 @@ namespace OnlineExamManagementSystem.Models
         [Required]
         public int PostalCode { get; set; }
         public string Country { get; set; }
-        public byte[] Image { get; set; }
-        public List<CourseTrainer> CourseTrainers { get; set; } 
+        public string Image { get; set; }
+        public virtual Organization Organizations { get; set; }
+        public int OrganizationId { get; set; }
+        public ICollection<CourseTrainer> CourseTrainers { get; set; } 
 
 
 

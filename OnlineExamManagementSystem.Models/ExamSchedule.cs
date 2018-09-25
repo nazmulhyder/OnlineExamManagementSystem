@@ -16,8 +16,10 @@ namespace OnlineExamManagementSystem.Models
         [Display(Name = "Exam Date Time Edit")]
         [DisplayFormat(ApplyFormatInEditMode=true ,DataFormatString = "0:yyyy-MM-dd HH:mm")]
         public DateTime? ExamDateTime { get; set; }
+        public virtual Exam Exam { get; set; }
         public int ExamId { get; set; }
-        public Exam Exam { get; set; }
-        
+        public virtual Batch Batches { get; set; }
+        public int BatchId { get; set; }
+
     }
 }

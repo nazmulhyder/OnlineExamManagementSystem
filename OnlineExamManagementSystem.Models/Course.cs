@@ -30,18 +30,10 @@ namespace OnlineExamManagementSystem.Models
         public string Outline { get; set; }
 
         public ICollection<CourseTag> CourseTags { get; set; }
-
+        public ICollection<Batch> Batches { get; set; }
+        public ICollection<Exam> Exams { get; set; }
+        public ICollection<CourseTrainer> CourseTrainers { get; set; }
         
-
-        
-
-
-
-        
-
-        
-
-
 
 
 

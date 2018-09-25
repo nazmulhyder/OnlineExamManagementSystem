@@ -13,6 +13,6 @@ namespace OnlineExamManagementSystem.Models
         public int CourseId { get; set; }
         public virtual Tags Tags { get; set; }
         public int TagId { get; set; }
-       // public ICollection<Tags> Tagses { get; set; }
+       
     }
 }

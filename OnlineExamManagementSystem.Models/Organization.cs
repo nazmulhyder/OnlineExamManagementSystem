@@ -21,8 +21,6 @@ namespace OnlineExamManagementSystem.Models
         [Required]
         [MaxLength(5,ErrorMessage = "Code should be 5 digit")]
         [MinLength(3,ErrorMessage = "Code should be 2 digit in minimum")]
-       
-
         public string Code { get; set; }
         [Required]
         public string Address { get; set; }
@@ -37,10 +35,8 @@ namespace OnlineExamManagementSystem.Models
         public string About { get; set; }
         
         public ICollection<Course> Courses { get; set; }
+        public ICollection<Trainer> Trainers { get; set; }
 
-        
-        
-
-        
+       
     }
 }

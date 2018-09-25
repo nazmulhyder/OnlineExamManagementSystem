@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExamManagementDBContext.cs" />
-    <Compile Include="Migrations\201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.cs" />
-    <Compile Include="Migrations\201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.Designer.cs">
-      <DependentUpon>201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.cs</DependentUpon>
+    <Compile Include="Migrations\201809251644329_add all table to the database,lazy loading.cs" />
+    <Compile Include="Migrations\201809251644329_add all table to the database,lazy loading.Designer.cs">
+      <DependentUpon>201809251644329_add all table to the database,lazy loading.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +66,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.resx">
-      <DependentUpon>201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809251644329_add all table to the database,lazy loading.resx">
+      <DependentUpon>201809251644329_add all table to the database,lazy loading.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

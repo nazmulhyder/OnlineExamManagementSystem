@@ -17,25 +17,32 @@ namespace OnlineExamManagementSystem.Controllers
         private ExamManagementDBContext db = new ExamManagementDBContext();
 
         // GET: Organizations
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string searchString,string searchString2,string searchString3,string searchString4)
         {
             var taken = from model in db.Organizations
                 select model;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                taken = taken.Where(s => s.Name.Contains(searchString));
-
-           }
+                taken = taken.Where(s =>s.Name.Contains(searchString));
+            }
+            else if (!String.IsNullOrEmpty(searchString2))
+            {
+                taken = taken.Where(m => m.Address.Contains(searchString2));
+            }
+            else if (!String.IsNullOrEmpty(searchString3))
+            {
+                taken = taken.Where(m => m.Code.Contains(searchString3));
+            }
+            else if (!String.IsNullOrEmpty(searchString4))
+            {
+                taken = taken.Where(m => m.ContactNo.Contains(searchString4));
+            }
             // return View(db.Organizations.ToList());
             return View(taken);
         }
 
-        //public ActionResult Index(string searchString)
-        //{
-            
-        //}
-
+        
         // GET: Organizations/Details/5
         public ActionResult Details(int? id)
         {
@@ -151,10 +158,10 @@ namespace OnlineExamManagementSystem.Controllers
             base.Dispose(disposing);
         }
 
-        public ActionResult Search(Organization organization)
-        {
-            return View("Search");
-        }
+        //public ActionResult Search(Organization organization)
+        //{
+        //    return View("Search");
+        //}
 
     }
 }

@@ -7,13 +7,13 @@ namespace OnlineExamManagement.DatabaseContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class courseorganizationcourse_tagmanytomanyrelationuseICollectioninsteadofList : IMigrationMetadata
+    public sealed partial class addalltabletothedatabaselazyloading : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(courseorganizationcourse_tagmanytomanyrelationuseICollectioninsteadofList));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addalltabletothedatabaselazyloading));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809201845357_course,organization,course_tag,many to many relation,use ICollection instead of List"; }
+            get { return "201809251644329_add all table to the database,lazy loading"; }
         }
         
         string IMigrationMetadata.Source

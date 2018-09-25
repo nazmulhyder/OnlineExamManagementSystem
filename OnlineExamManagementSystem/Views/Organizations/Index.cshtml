@@ -2,6 +2,7 @@
 
 @{
     Layout = null;
+    ViewBag.Title ="Index";
 }
 
 <!DOCTYPE html>
@@ -13,10 +14,48 @@
     <title>Index</title>
 </head>
 <body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
+<div id="div1">
+
+    @Html.ActionLink("Create New", "Create")
+    @using (Html.BeginForm()){
+        <p>
+            Name:<br />@Html.TextBox("searchString")<br />
+            Address:<br />@Html.TextBox("searchString2")<br />
+            Code:<br />@Html.TextBox("searchString3")<br />
+            Contact No:<br /> @Html.TextBox("searchString4")
+            <input type="submit" value="Search" />
+        </p>
+    }
+</div>
+@*<div id="div2">
+
+
+    @using (Html.BeginForm())
+    {
+        <p>
+            
+            Code:<br />@Html.TextBox("searchString3")<br />
+            Contact No:<br /> @Html.TextBox("searchString4")
+            <input type="submit" value="Search" />
+        </p>
+    }
+</div>
+
+<style>
+    #div {
+        text-align: left;
+        width: 50px;
+        height: 100px;
+
+    }
+    
+    #div2 {
+        text-align: right;
+        width: 50px;
+        height: 100px;
+    }
+</style>*@
+<table class="table">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)

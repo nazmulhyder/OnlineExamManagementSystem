@@ -319,8 +319,6 @@
     <Content Include="Views\Organizations\Details.cshtml" />
     <Content Include="Views\Organizations\Edit.cshtml" />
     <Content Include="Views\Organizations\Index.cshtml" />
-    <Content Include="Views\Organizations\TabsJQ.cshtml" />
-    <Content Include="Views\Organizations\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -10,9 +10,9 @@ namespace OnlineExamManagementSystem.Models
     {
         public int Id { get; set; }
 
-        public Course Course { get; set; }
+        public virtual Course Course { get; set; }
         public int CourseId { get; set; }
-        public Trainer Trainer { get; set; }
+        public virtual Trainer Trainer { get; set; }
         public int TrainerId { get; set; }
     }
 }

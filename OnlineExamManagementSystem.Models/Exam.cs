@@ -21,7 +21,7 @@ namespace OnlineExamManagementSystem.Models
         public TimeSpan Duration { get; set; }
         public int CourseId { get; set; }
         public Course Course { get; set; }
-        public List<ExamSchedule> ExamSchedules { get; set; }
+        public ICollection<ExamSchedule> ExamSchedules { get; set; }
 
 
     }
