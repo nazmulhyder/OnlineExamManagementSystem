@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace OnlineExamManagementSystem.Models
 {
@@ -13,6 +14,7 @@ namespace OnlineExamManagementSystem.Models
 
         [Required]
         public int BatchNumber { get; set; }
+        [AllowHtml]
         public string Description { get; set; }
         [Display(Name="Start Date")]
         [DataType(DataType.Date)]

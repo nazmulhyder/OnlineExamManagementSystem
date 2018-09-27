@@ -52,6 +52,18 @@
     <Compile Include="Migrations\201809251644329_add all table to the database,lazy loading.Designer.cs">
       <DependentUpon>201809251644329_add all table to the database,lazy loading.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809251936091_exam schedule slight changes.cs" />
+    <Compile Include="Migrations\201809251936091_exam schedule slight changes.Designer.cs">
+      <DependentUpon>201809251936091_exam schedule slight changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809271758418_exam duration change.cs" />
+    <Compile Include="Migrations\201809271758418_exam duration change.Designer.cs">
+      <DependentUpon>201809271758418_exam duration change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809272030095_tainer model modified for processing img.cs" />
+    <Compile Include="Migrations\201809272030095_tainer model modified for processing img.Designer.cs">
+      <DependentUpon>201809272030095_tainer model modified for processing img.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +80,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201809251644329_add all table to the database,lazy loading.resx">
       <DependentUpon>201809251644329_add all table to the database,lazy loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809251936091_exam schedule slight changes.resx">
+      <DependentUpon>201809251936091_exam schedule slight changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809271758418_exam duration change.resx">
+      <DependentUpon>201809271758418_exam duration change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809272030095_tainer model modified for processing img.resx">
+      <DependentUpon>201809272030095_tainer model modified for processing img.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

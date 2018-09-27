@@ -14,47 +14,26 @@
     <title>Index</title>
 </head>
 <body>
-<div id="div1">
+
 
     @Html.ActionLink("Create New", "Create")
-    @using (Html.BeginForm()){
-        <p>
-            Name:<br />@Html.TextBox("searchString")<br />
-            Address:<br />@Html.TextBox("searchString2")<br />
-            Code:<br />@Html.TextBox("searchString3")<br />
-            Contact No:<br /> @Html.TextBox("searchString4")
-            <input type="submit" value="Search" />
-        </p>
-    }
-</div>
-@*<div id="div2">
 
+<form>
+    <fieldset>
+        <legend>Index/Organization Search</legend>
+        @using (Html.BeginForm())
+        {
+         <p>
 
-    @using (Html.BeginForm())
-    {
-        <p>
-            
-            Code:<br />@Html.TextBox("searchString3")<br />
-            Contact No:<br /> @Html.TextBox("searchString4")
-            <input type="submit" value="Search" />
-        </p>
-    }
-</div>
-
-<style>
-    #div {
-        text-align: left;
-        width: 50px;
-        height: 100px;
-
-    }
-    
-    #div2 {
-        text-align: right;
-        width: 50px;
-        height: 100px;
-    }
-</style>*@
+                Name:<br/>@Html.TextBox("searchString")<br/>
+                Address:<br/>@Html.TextBox("searchString2")<br/>
+                Code:<br/>@Html.TextBox("searchString3")<br/>
+                Contact No:<br/> @Html.TextBox("searchString4")
+                <input type="submit" value="Search"/>
+            </p>
+        }
+    </fieldset>
+</form>
 <table class="table">
         <tr>
             <th>
@@ -75,7 +54,11 @@
             <th>
                 @Html.DisplayNameFor(model => model.About)
             </th>
-            <th></th>
+            
+             <th>
+                    @Html.DisplayNameFor(model => model.Logo)
+             </th>
+            
         </tr>
     
     @foreach (var item in Model) {
@@ -99,12 +82,15 @@
                 @Html.DisplayFor(modelItem => item.About)
             </td>
             <td>
-               <img src="@Url.Content(item.ImgPath)" width="50" height="50" multiple/>
+                @Html.DisplayFor(modelItem => item.Logo)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                <img src="@Url.Content(item.ImgPath)" width="50" height="50" multiple />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
     }

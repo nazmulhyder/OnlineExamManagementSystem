@@ -16,10 +16,29 @@ namespace OnlineExamManagementSystem.Controllers
         private ExamManagementDBContext db = new ExamManagementDBContext();
 
         // GET: Courses
-        public ActionResult Index()
+        //Also work in  course search
+        public ActionResult Index(string searchString, string searchString2)
         {
-            var courses = db.Courses.Include(c => c.Organizations);
-            return View(courses.ToList());
+
+            var taken = from model in db.Courses
+                select model;
+            
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                taken = taken.Where(m => m.Name.Contains(searchString));
+              
+            }
+            else if (!String.IsNullOrEmpty(searchString2))
+            {
+                taken = taken.Where(m => m.Code.Contains(searchString2));
+                
+            }
+
+
+            //var courses = db.Courses.Include(c => c.Organizations);
+            //return View(courses.ToList());
+            return View(taken);
         }
 
         // GET: Courses/Details/5
@@ -119,6 +138,11 @@ namespace OnlineExamManagementSystem.Controllers
             db.Courses.Remove(course);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Tabs()
+        {
+            return RedirectToAction("Tabs");
         }
 
         protected override void Dispose(bool disposing)
