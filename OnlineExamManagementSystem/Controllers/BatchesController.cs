@@ -40,7 +40,13 @@ namespace OnlineExamManagementSystem.Controllers
         // GET: Batches/Create
         public ActionResult Create()
         {
-            ViewBag.CourseId = new SelectList(db.Courses, "Id", "Name");
+            var defaultSelectListItem = new List<SelectListItem>()
+            {
+                new SelectListItem() {Value ="",Text ="Select"}
+            };
+            ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name");
+            ViewBag.CourseId = defaultSelectListItem;
+
             return View();
         }
 
@@ -60,6 +66,13 @@ namespace OnlineExamManagementSystem.Controllers
 
             ViewBag.CourseId = new SelectList(db.Courses, "Id", "Name", batch.CourseId);
             return View(batch);
+        }
+
+        public JsonResult GetCourseBy(int organizationId)
+        {
+            var courses = db.Courses.Where(x => x.OrganizationId == organizationId);
+            var jsonResult = courses.Select(c => new { c.Id, c.Name, c.Code, c.CourseDuration, c.Outline, c.Credit, c.OrganizationId });
+            return Json(jsonResult, JsonRequestBehavior.AllowGet);
         }
 
         // GET: Batches/Edit/5

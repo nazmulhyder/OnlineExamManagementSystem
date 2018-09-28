@@ -41,7 +41,14 @@ namespace OnlineExamManagementSystem.Controllers
         // GET: Trainers/Create
         public ActionResult Create()
         {
-           // ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name");
+
+            var defaultSelectListItem = new List<SelectListItem>()
+            {
+                new SelectListItem(){Value = "",Text = "Select"}
+            };
+            ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name");
+            ViewBag.CourseId = defaultSelectListItem;
+            ViewBag.BatchId = defaultSelectListItem;
             return View();
         }
 
@@ -105,6 +112,23 @@ namespace OnlineExamManagementSystem.Controllers
             }
             ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name", trainer.OrganizationId);
             return View(trainer);
+        }
+
+        public JsonResult GetCourseBy(int organizationId)
+        {
+            var courses = db.Courses.Where(c => c.OrganizationId == organizationId);
+            var jsonResult = courses.Select(c =>
+                new {c.Id, c.Name, c.Code, c.CourseDuration, c.Outline, c.Credit, c.OrganizationId});
+            return Json(jsonResult, JsonRequestBehavior.AllowGet);
+
+        }
+
+        public JsonResult GetBatchBy(int courseId)
+        {
+            var courses = db.Batches.Where(c => c.CourseId == courseId );
+            var jsonResult = courses.Select(c =>
+                new { c.Id, c.BatchNumber, c.Description, c.StartDate, c.EndDate, c.CourseId,c.ExamSchedules,c.Participants});
+            return Json(jsonResult, JsonRequestBehavior.AllowGet);
         }
 
         // GET: Trainers/Delete/5

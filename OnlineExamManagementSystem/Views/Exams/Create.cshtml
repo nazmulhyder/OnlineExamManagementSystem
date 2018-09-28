@@ -117,10 +117,11 @@
                     var defaultOption = "<option value=''>Select....</option>";
                     courseDropDown.append(defaultOption);
 
-                    $.each(response, function (key, course) {
-                        var option = "<option value='" + course.Id + "'>" + course.Name + "</option>";
-                        courseDropDown.append(option);
-                    });
+                    $.each(response,
+                        function (key, course) {
+                            var option = "<option value='" + course.Id + "'>" + course.Name + "</option>";
+                            courseDropDown.append(option);
+                        });
 
                 },
                 error: function (response) {
@@ -128,7 +129,7 @@
                 }
             });
 
-        })
+        });
 
 
         //2. get json response and bind data in trainee dropdown
