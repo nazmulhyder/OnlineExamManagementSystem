@@ -87,8 +87,8 @@ namespace OnlineExamManagementSystem.Controllers
             string fileName = Path.GetFileNameWithoutExtension(organization.Logo.FileName);
             string extension = Path.GetExtension(organization.Logo.FileName);
             fileName = fileName + DateTime.Now.ToString("yy-MM-dd") + extension;
-            organization.ImgPath = "/Images/" + fileName;
-            fileName = Path.Combine(Server.MapPath("/Images/"), fileName);
+            organization.ImgPath = "/ImagesOEMS/" + fileName;
+            fileName = Path.Combine(Server.MapPath("/ImagesOEMS/"), fileName);
             organization.Logo.SaveAs(fileName);
         }
 

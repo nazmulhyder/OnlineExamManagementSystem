@@ -67,7 +67,14 @@ namespace OnlineExamManagementSystem.Controllers
                 return RedirectToAction("Index");
             }
 
-            //ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name", trainer.OrganizationId);
+            ViewBag.OrganizationId = new SelectList(db.Organizations, "Id", "Name", trainer.OrganizationId);
+            var defaultSelectItems = new List<SelectListItem>()
+            {
+                new SelectListItem(){Value ="",Text = "Select.."}
+            };
+
+            ViewBag.CourseId = defaultSelectItems;
+            ViewBag.BatchId = defaultSelectItems;
             return View(trainer);
         }
 
@@ -76,8 +83,8 @@ namespace OnlineExamManagementSystem.Controllers
             string fileName = Path.GetFileNameWithoutExtension(trainer.Image.FileName);
             string extension = Path.GetExtension(trainer.Image.FileName);
             fileName = fileName + DateTime.Now.ToString("yy-MM-dd") + extension;
-            trainer.ImgPath = "/Images/Trainer/" + fileName;
-            fileName = Path.Combine(Server.MapPath("/Images/Trainer/"), fileName);
+            trainer.ImgPath = "/ImagesOEMS/Trainer/" + fileName;
+            fileName = Path.Combine(Server.MapPath("/ImagesOEMS/Trainer/"), fileName);
             trainer.Image.SaveAs(fileName);
         }
 

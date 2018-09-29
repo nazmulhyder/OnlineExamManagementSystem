@@ -1,12 +1,12 @@
 ﻿@model OnlineExamManagementSystem.Models.Organization
 
 @{
-    Layout = null;
+    Layout ="~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
 
-<html>
+@*<html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
@@ -15,7 +15,7 @@
 <body>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
     
 
 
@@ -24,7 +24,7 @@
         @Html.AntiForgeryToken()
 
         <div class="form-horizontal">
-            <h4>Organization</h4>
+            <h3>Organization Entry</h3>
             <hr />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
@@ -37,7 +37,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Code, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-6">
                     @Html.EditorFor(model => model.Code, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.Code, "", new { @class = "text-danger" })
                 </div>
@@ -53,7 +53,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.ContactNo, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-6">
                     @Html.EditorFor(model => model.ContactNo, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.ContactNo, "", new { @class = "text-danger" })
                 </div>
@@ -86,7 +86,7 @@
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Create" class="btn btn-default" />
+                    <input type="submit" value="Create" class="btn btn-success" />
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
     <div>
         @Html.ActionLink("Back to List", "Index")
     </div>
-</body>
-</html>
+@*</body>
+</html>*@
 <script src="~/Scripts/tinymce/tinymce.js"></script>
 <script src="~/Scripts/main.js"></script>

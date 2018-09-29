@@ -1,40 +1,43 @@
 ﻿@model IEnumerable<OnlineExamManagementSystem.Models.Organization>
 
 @{
-    Layout = null;
+    Layout ="~/Views/Shared/_Layout.cshtml"; 
     ViewBag.Title ="Index";
 }
 
 <!DOCTYPE html>
 
-<html>
+@*<html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <title>Index</title>
-</head>
+</head>*@
 <body>
 
 
     @Html.ActionLink("Create New", "Create")
 
-<form>
+<div>
     <fieldset>
         <legend>Index/Organization Search</legend>
-        @using (Html.BeginForm())
-        {
+         @using (Html.BeginForm())
+         {
+          <p>
+          Name:<br />@Html.TextBox("searchString")
+          </p>
          <p>
-
-                Name:<br/>@Html.TextBox("searchString")<br/>
-                Address:<br/>@Html.TextBox("searchString2")<br/>
-                Code:<br/>@Html.TextBox("searchString3")<br/>
-                Contact No:<br/> @Html.TextBox("searchString4")
-                <input type="submit" value="Search"/>
+          Address:<br />@Html.TextBox("searchString2")
             </p>
+          
+          <p>Code:<br />@Html.TextBox("searchString3")</p>
+           <p> Contact No:<br /> @Html.TextBox("searchString4")</p>
+                <input  type="submit" value="Search"/>
+           
         }
     </fieldset>
-</form>
-<table class="table">
+</div>
+<table class="table table-bordered table-striped" >
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
@@ -55,9 +58,13 @@
                 @Html.DisplayNameFor(model => model.About)
             </th>
             
-             <th>
-                    @Html.DisplayNameFor(model => model.Logo)
-             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Logo)
+            </th>
+            <th>
+               
+            </th>
+           
             
         </tr>
     
@@ -83,18 +90,19 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Logo)
-            </td>
-            <td>
                 <img src="@Url.Content(item.ImgPath)" width="50" height="50" multiple />
             </td>
+            @*<td>
+                <img src="@Url.Content(item.ImgPath)" width="50" height="50" multiple />
+            </td>*@
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })|
+                @Html.ActionLink("Details", "Details", new { id = item.Id })|
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
     }
     
     </table>
-</body>
-</html>
+@*</body>
+</html>*@

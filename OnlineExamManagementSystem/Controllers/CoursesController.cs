@@ -36,9 +36,9 @@ namespace OnlineExamManagementSystem.Controllers
             }
 
 
-            //var courses = db.Courses.Include(c => c.Organizations);
-            //return View(courses.ToList());
-            return View(taken);
+            var courses = db.Courses.Include(c => c.Organizations);
+            return View(courses.ToList());
+            //return View(taken);
         }
 
         // GET: Courses/Details/5

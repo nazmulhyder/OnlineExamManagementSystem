@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<OnlineExamManagementSystem.Models.Exam>
 
 @{
-    Layout = null;
+    Layout ="~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
+@*<!DOCTYPE html>
 
 <html>
 <head>
@@ -12,11 +12,11 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <title>Index</title>
 </head>
-<body>
+<body>*@
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
-    <table class="table">
+    <table class="table table-bordered table-striped">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Course.Name)
@@ -68,5 +68,5 @@
     }
     
     </table>
-</body>
-</html>
+@*</body>
+</html>*@
